@@ -1,0 +1,11 @@
+services:
+  docker-linux:
+    build:
+      context: E:\repositories\DockerLinux\docker-linux
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dockerlinux
+    ports:
+    - target: 80
+version: '3.4'
